@@ -1,0 +1,16 @@
+sensor.ring_front_door_battery:
+  hidden: true
+sensor.ring_front_door_wifi_signal_category:
+  hidden: true
+sensor.ring_front_door_volume:
+  hidden: true
+binary_sensor.ring_front_door_motion:
+  hidden: true
+sensor.ring_downstairs_wifi_signal_strength:
+  hidden: true
+sensor.ring_downstairs_wifi_signal_category:
+  hidden: true
+sensor.ring_downstairs_volume:
+  hidden: true
+sensor.ring_front_door_wifi_signal_strength:
+  hidden: true
