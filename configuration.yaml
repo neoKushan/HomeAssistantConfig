@@ -53,8 +53,12 @@ map:
 # Track the sun
 sun:
 
-# Weather prediction
+# Allow diagnosing system problems
+system_health:
+
+# Sensors
 sensor:
+  # Weather prediction
   - platform: yr
   - platform: ring
 
@@ -75,9 +79,11 @@ script: !include scripts.yaml
 
 device_tracker:
   - platform: asuswrt
-    host: 192.168.1.1
-    username: !secret asus_username
-    password: !secret asus_password
+
+asuswrt:
+  host: 192.168.1.1
+  username: !secret asus_username
+  password: !secret asus_password
 
 hive:
   username: !secret hive_username
@@ -92,6 +98,6 @@ switch:
     name: "Steve's PC"
     mac_address: "E0-D5-5E-E0-F4-82"
     
-zwave:
-  usb_path: /dev/ttyACM0
-  network_key: !secret zwave_network_key
+# zwave:
+  # usb_path: /dev/ttyACM0
+  # network_key: !secret zwave_network_key
